@@ -66,13 +66,34 @@ $second-color: #4f8ff0;
     border: 2px solid $second-color;
     background: $second-color;
   }
+  &__disactive {
+    display: none;
+    background: rgba(79, 143, 240);
+    width: 424px;
+    height: 270px;
+  }
+  &__icon {
+    margin: 115px 192px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 41.165px;
+    height: 40px;
+    position: absolute;
+    background-color: $base-color;
+  }
   a:hover {
     color: $second-color;
     background: $base-color;
   }
-  &__title:hover {
-    img {
+  &__card:hover {
+    .materials__disactive {
+      position: absolute;
+      display: block;
       opacity: 0.4;
+    }
+    .materials__icon{
+      display: flex;
     }
     h3 {
       color: $second-color;

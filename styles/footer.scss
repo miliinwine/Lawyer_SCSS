@@ -66,6 +66,12 @@ $second-color: #4f8ff0;
       color: #8c8c8c;
       font-size: 12px;
     }
+    a {
+      color: $base-color;
+    }
+  }
+  a:hover {
+    color: $second-color;
   }
   &__nav {
     width: 312px;
@@ -78,9 +84,6 @@ $second-color: #4f8ff0;
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
-    }
-    a:hover {
-      color: $second-color;
     }
   }
   &__question {

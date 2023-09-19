@@ -292,8 +292,34 @@
   line-height: 120%;
   text-transform: lowercase;
 }
+.lawyers__disactive {
+  display: none;
+}
 .lawyers__profile:hover {
-  box-shadow: 2px 2px 12px 0px rgb(0, 0, 0);
+  width: 312px;
+  height: 414px;
+  box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+}
+.lawyers__profile:hover img {
+  display: none;
+}
+.lawyers__profile:hover .lawyers__info {
+  margin-top: 59px;
+}
+.lawyers__profile:hover .lawyers__disactive {
+  display: block;
+}
+.lawyers__profile:hover .lawyers__disactive p {
+  width: 265px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+.lawyers__profile:hover .lawyers__disactive p:last-child {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
 }
 
 .reviews {
@@ -371,9 +397,6 @@
 .reviews__buttons a:hover {
   background: #fff;
 }
-.reviews__card:hover {
-  box-shadow: 2px 2px 10px 0px rgb(0, 0, 0);
-}
 
 .materials {
   margin-bottom: 80px;
@@ -442,14 +465,35 @@
   border: 2px solid #4f8ff0;
   background: #4f8ff0;
 }
+.materials__disactive {
+  display: none;
+  background: rgb(79, 143, 240);
+  width: 424px;
+  height: 270px;
+}
+.materials__icon {
+  margin: 115px 192px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 41.165px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+}
 .materials a:hover {
   color: #4f8ff0;
   background: #fff;
 }
-.materials__title:hover img {
+.materials__card:hover .materials__disactive {
+  position: absolute;
+  display: block;
   opacity: 0.4;
 }
-.materials__title:hover h3 {
+.materials__card:hover .materials__icon {
+  display: flex;
+}
+.materials__card:hover h3 {
   color: #4f8ff0;
 }
 
@@ -521,6 +565,12 @@
   color: #8c8c8c;
   font-size: 12px;
 }
+.footer__contact a {
+  color: #fff;
+}
+.footer a:hover {
+  color: #4f8ff0;
+}
 .footer__nav {
   width: 312px;
   height: 182px;
@@ -533,9 +583,6 @@
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-}
-.footer__nav a:hover {
-  color: #4f8ff0;
 }
 .footer__question {
   width: 424px;
