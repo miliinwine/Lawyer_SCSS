@@ -1,0 +1,59 @@
+$base-color: #fff;
+$second-color: #4f8ff0;
+.history {
+  margin-top: 80px;
+  .conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  span {
+    color: $second-color;
+  }
+  h2::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid $second-color;
+    width: 50px;
+    margin-bottom: 24px;
+  }
+  &__text {
+    width: 720px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__buttons {
+    margin: 32px 0 80px 0;
+    width: 395px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  a:first-child {
+    width: 210px;
+    color: $base-color;
+    border: 2px solid $second-color;
+    background: $second-color;
+  }
+  a:last-child {
+    width: 161px;
+    color: #222;
+    border: 2px solid #e6e6e6;
+    background: #e6e6e6;
+  }
+  a:first-child:hover {
+    color: $second-color;
+  }
+  a:hover {
+    background: $base-color;
+  }
+}

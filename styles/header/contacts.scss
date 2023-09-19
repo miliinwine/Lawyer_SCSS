@@ -1,0 +1,33 @@
+$base-color: #fff;
+$second-color: #4f8ff0;
+.contacts {
+  height: 52px;
+  background-color: #010101;
+  padding-top: 16px;
+  .conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 342px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    color: $base-color;
+    font-size: 14px;
+    font-weight: 700;
+    gap: 8px;
+  }
+  p {
+    color: $second-color;
+  }
+  a:hover {
+    color: $second-color;
+  }
+  p:hover{
+    color: $base-color;
+  }
+}

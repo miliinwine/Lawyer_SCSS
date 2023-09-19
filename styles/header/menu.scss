@@ -1,0 +1,42 @@
+.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 112px;
+  background: rgba(1, 1, 1, 0.76);
+  display: flex;
+  align-items: center;
+  .conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  p {
+    font-weight: 900;
+    line-height: 150%;
+  }
+  h2 {
+    color: $second-color;
+  }
+  p {
+    margin-top: -10px;
+    color: $base-color;
+    font-size: 20px;
+    text-transform: lowercase;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 679px;
+    a {
+      color: $base-color;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+    a:hover {
+      color: $second-color;
+      text-decoration: underline;
+    }
+  }
+}

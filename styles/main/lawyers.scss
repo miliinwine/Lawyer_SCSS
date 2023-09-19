@@ -1,0 +1,58 @@
+$base-color: #fff;
+$second-color: #4f8ff0;
+.lawyers {
+  height: 739px;
+  background: #f7f7f7;
+  text-align: center;
+  padding-top: 80px;
+  // h2 {
+  //   font-size: 28px;
+  //   font-weight: 800;
+  //   line-height: 150%;
+  //   text-transform: uppercase;
+  // }
+  h2:after {
+    content: "";
+    width: 50px;
+    border-bottom: 3px $second-color solid;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 24px;
+  }
+  p {
+    margin: 0 auto;
+    width: 920px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  &__list {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+  }
+  &__profile {
+    width: 312px;
+    height: 414px;
+    background: $base-color;
+    box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+  }
+  &__info {
+    margin-top: 24px;
+    h3:first-child {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 120%;
+      margin-bottom: 10px;
+    }
+    h3:last-child {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 120%;
+      text-transform: lowercase;
+    }
+  }
+  &__profile:hover {
+    box-shadow: 2px 2px 12px 0px rgb(0, 0, 0);
+  }
+}

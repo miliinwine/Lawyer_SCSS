@@ -1,0 +1,66 @@
+$base-color: #fff;
+$second-color: #4f8ff0;
+.services {
+  background: #f7f7f7;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  h2::after {
+    content: "";
+    margin: 0 auto;
+    display: block;
+    border-bottom: 3px solid $second-color;
+    width: 50px;
+    margin-bottom: 24px;
+  }
+  &__cards {
+    margin-top: 48px;
+    height: 538px;
+    display: grid;
+    grid-template-columns: 424px 424px 424px;
+    gap: 24px;
+  }
+  &__card {
+    height: 250px;
+    background-color: $base-color;
+    padding: 50px 32px 50px 32px;
+    h3 {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 150%;
+      margin: 15px 0 10px 0;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 138px;
+    height: 49px;
+    margin: 0 auto;
+    margin-top: 48px;
+    width: 138px;
+    color: $base-color;
+    font-size: 14px;
+    font-weight: 900;
+    border: 2px solid $second-color;
+    background: $second-color;
+    text-transform: uppercase;
+  }
+  a:hover {
+    color: $second-color;
+    background: $base-color;
+  }
+  &__card:hover {
+    background-color: $second-color;
+    color: $base-color;
+  }
+  &__card:hover path {
+    fill: $base-color;
+  }
+}

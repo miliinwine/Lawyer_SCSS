@@ -1,0 +1,80 @@
+$base-color: #fff;
+$second-color: #4f8ff0;
+.reviews {
+  padding-top: 80px;
+  height: 588px;
+  background-image: url("../img/reviews.png");
+  h2:after {
+    content: "";
+    display: block;
+    width: 50px;
+    border-bottom: 3px $second-color solid;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 648px 648px;
+    gap: 24px;
+    margin-top: 48px;
+  }
+  &__card {
+    padding-top: 32px;
+    background-color: $base-color;
+    height: 244px;
+    width: 648px;
+    box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 120%;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%;
+    }
+  }
+  &__info {
+    align-items: center;
+    width: 584px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 104px 425px auto;
+    margin-bottom: 16px;
+  }
+  p:last-child {
+    margin: 0 auto;
+    width: 584px;
+  }
+  &__buttons {
+    margin-top: 32px;
+    width: 355px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      padding: 16px 22px;
+      font-size: 14px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    a:first-child {
+      color: $base-color;
+      border: 2px solid $second-color;
+      background: $second-color;
+    }
+    a:last-child {
+      color: #222;
+      border: 2px solid #e6e6e6;
+      background: #e6e6e6;
+    }
+    a:first-child:hover {
+      color: $second-color;
+    }
+    a:hover {
+      background: $base-color;
+    }
+  }
+  &__card:hover {
+    box-shadow: 2px 2px 10px 0px rgb(0, 0, 0);
+  }
+}
